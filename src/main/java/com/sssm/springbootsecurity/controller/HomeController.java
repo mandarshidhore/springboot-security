@@ -21,5 +21,10 @@ public class HomeController {
 	public int getcheckingaccountbalance(@PathVariable("acctNumber") final String acctNumb) {
 		return 100;
 	}
+	
+	@GetMapping("/getuserdetails/admin/{acctNumber}")
+	public int getUserDetails(@PathVariable("acctNumber") final String acctNumb) {
+		return 200;
+	}
 
 }
